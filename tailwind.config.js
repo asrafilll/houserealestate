@@ -16,6 +16,9 @@ module.exports = {
         blue: {
           450: '#739AD4',
         }
+      },
+      backgroundImage: {
+        'hero-bg' : "url('/assets/img/herobackground.png')",
       }
     },
   },

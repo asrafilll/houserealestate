@@ -14,8 +14,8 @@
     <title>House - Real Estate</title>
   </head>
 
-  <body class=" max-w-6xl mx-auto font-inter">
-    <nav class="mt-9 flex items-center z-10">
+  <body class="font-inter">
+    <nav class="max-w-6xl mx-auto pt-9 flex items-center relative z-50">
       <div class="text-3.5xl text-gray-850 font-bold w-2/3">House</div>
       <div class="w-1/3 space-x-8 text-blue-450">
         <a href="index.html" class="text-gray-850">Home</a>
@@ -23,9 +23,11 @@
         <a href="#" class="">Recommendation</a>
       </div>
     </nav>
+    <img src="/assets/img/herobackground.png" class="absolute top-0 right-0 z-0" alt="hero background">
 
-    <main>
-      <section id="hero" class="flex z-50">
+    <main class="max-w-6xl mx-auto">
+      <section id="hero">
+        <div class="flex items-end">
         <div class="w-1/2 mt-14 space-y-6">
             <h1 class="text-7xl font-bold leading-tight text-gray-850">Find Your Next Home Stay</h1>
             <div class="flex space-x-20">
@@ -45,10 +47,13 @@
             <p class="text-gray-400">Consectetur odio amet risus ut mattis sed tempor, sed luctus consequat in pellentesque neque nec auctor eu mi mauris, sapien aliquam duis eget id morbi auctor ac tellus ut</p>
             <a href="#" class="inline-block px-12 py-4 bg-blue-700 text-white font-semibold rounded-xl shadow-2xl">Find House</a>
         </div>
-        <div class="w-1/2">
-            <img src="/assets/img/herobackground.png" />
+        <div class="w-1/2 z-50 text-right">
+           <img src="/assets/img/heroinfo.png" class="w-10/12 inline" alt="Hotel Details" />
         </div>
+      </div>
       </section>
+
+
     </main>
   </body>
 </html>
