@@ -2,12 +2,12 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    fontSize: {
-      '3xl' : '28px',
-    },
     extend: {
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
+      },
+      fontSize: {
+        '3.5xl' : '28px',
       },
       colors : {
         gray: {
