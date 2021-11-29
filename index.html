@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>House - Real Estate</title>
   </head>
 
@@ -54,39 +58,34 @@
     <!-- Background Image -->
     <img
       src="/assets/img/herobackground.png"
-      class="absolute top-0 right-0 z-0 h-screen"
+      class="hidden md:block absolute top-0 right-0 z-0 h-screen"
       alt="hero background"
     />
 
     <!-- Hero Section START -->
-    <section id="hero" class="h-screen">
-      <div class="sm:flex items-end px-5 sm:px-0 max-w-6xl mx-auto">
+    <section id="hero" class="md:h-screen">
+      <div class="sm:flex items-end px-5 sm:px-0 md:max-w-6xl max-w-xl mx-auto">
         <div class="sm:w-1/2 mt-16 space-y-6">
           <h1
-            class="
-              text-5xl
-              sm:text-6xl sm:leading-tight
-              font-bold
-              text-gray-850
-            "
+            class="text-4xl sm:text-6xl leading-tight font-bold text-gray-850"
           >
             Find Your Next Home Stay
           </h1>
           <div class="flex divide-x-2 divide-gray-100">
-            <div class="pr-8">
-              <h3 class="text-gray-850 text-4xl font-bold">37</h3>
+            <div class="pr-4 md:pr-8">
+              <h3 class="text-gray-850 text-2xl md:text-4xl font-bold">37</h3>
               <p class="text-gray-400">Homestay</p>
             </div>
-            <div class="px-8">
-              <h3 class="text-gray-850 text-4xl font-bold">80</h3>
+            <div class="px-4 md:px-8">
+              <h3 class="text-gray-850 text-2xl md:text-4xl font-bold">80</h3>
               <p class="text-gray-400">Partners</p>
             </div>
-            <div class="px-8">
-              <h3 class="text-gray-850 text-4xl font-bold">760</h3>
+            <div class="px-4 md:px-8">
+              <h3 class="text-gray-850 text-2xl md:text-4xl font-bold">760</h3>
               <p class="text-gray-400">Villas</p>
             </div>
           </div>
-          <p class="text-gray-400">
+          <p class="text-sm md:text-lg text-gray-400">
             Consectetur odio amet risus ut mattis sed tempor, sed luctus
             consequat in pellentesque neque nec auctor eu mi mauris, sapien
             aliquam duis eget id morbi auctor ac tellus ut
@@ -95,9 +94,11 @@
             href="#"
             class="
               inline-block
-              text-sm
-              px-12
-              py-4
+              md:text-sm
+              text-xs
+              px-6
+              py-3
+              md:px-12 md:py-4
               bg-blue-700
               text-white
               font-semibold
@@ -107,10 +108,10 @@
             >Find House</a
           >
         </div>
-        <div class="sm:w-1/2 z-50 sm:text-right">
+        <div class="md:w-1/2 z-50 md:text-right text-left">
           <img
             src="/assets/img/heroinfo.png"
-            class="w-11/12 inline"
+            class="md:w-11/12 w-11/12"
             alt="Hotel Details"
           />
         </div>
@@ -120,29 +121,32 @@
 
     <!-- Promo Section START -->
     <section id="promo" class="bg-gray-950 py-8">
-      <div class="max-w-6xl mx-auto">
-        <div class="flex items-baseline justify-between mt-10">
-          <div class="w-7/12">
-            <h2 class="text-6xl font-semibold text-white">
+      <div class="md:max-w-6xl px-4 md:px-0 max-w-xl mx-auto">
+        <div class="md:flex items-baseline justify-between md:mt-10">
+          <div class="md:w-7/12">
+            <h2 class="md:text-6xl text-4xl font-semibold text-white">
               Explore our promos
             </h2>
-            <p class="text-sm text-gray-750 mt-8">
+            <p class="md:text-sm text-gray-750 md:mt-8 my-4 text-xs">
               Blandit
-              <span class="text-blue-500 font-semibold">1,900</span> natoque dui
-              justo, dictum turpis amet, viverra vel ornare quis mattis mi ac
-              eget id integer dolor dui aliquam volutpat varius pulvinar massa
+              <span class="text-blue-500 font-semibold">1,900</span>
+              natoque dui justo, dictum turpis amet, viverra vel ornare quis
+              mattis mi ac eget id integer dolor dui aliquam volutpat varius
+              pulvinar massa
             </p>
           </div>
           <div>
             <a
               href="#"
               class="
+                text-xs
+                py-3
+                px-6
                 inline-block
-                text-sm
+                md:text-sm
                 bg-blue-700
                 text-white
-                py-4
-                px-12
+                md:py-4 md:px-12
                 rounded-xl
                 font-semibold
               "
@@ -150,10 +154,38 @@
             >
           </div>
         </div>
-        <div class="py-10 flex space-x-5 overflow-x-scroll no-scrollbar">
-          <img src="assets/img/image 4.png" alt="Slider Promo 1" />
-          <img src="assets/img/image 5.png" alt="Slider Promo 1" />
-          <img src="assets/img/image 6.png" alt="Slider Promo 1" class="" />
+
+        <div class="swiper max-w-full mySwiper hidden md:block">
+          <div class="swiper-wrapper md:py-10 py-4">
+            <div class="swiper-slide">
+              <img src="assets/img/image 4.png" alt="Slider Promo 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/image 5.png" alt="Slider Promo 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/image 4.png" alt="Slider Promo 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/image 5.png" alt="Slider Promo 1" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper max-w-full mySwiper2 block md:hidden">
+          <div class="swiper-wrapper md:py-10 py-4">
+            <div class="swiper-slide">
+              <img src="assets/img/image 4.png" alt="Slider Promo 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/image 5.png" alt="Slider Promo 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/image 4.png" alt="Slider Promo 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/image 5.png" alt="Slider Promo 1" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -161,43 +193,79 @@
 
     <!-- Why Choose Us Section START -->
     <section id="skills" class="bg-gray-100">
-      <div class="max-w-6xl mx-auto py-24">
+      <div class="max-w-6xl mx-auto md:py-24 py-12 px-6 md:px-0">
         <div class="text-center">
-          <h2 class="text-5xl font-bold text-gray-900">Why Choose Us</h2>
-          <p class="text-gray-700 mt-3">
+          <h2 class="text-3xl md:text-5xl font-bold text-gray-900">
+            Why Choose Us
+          </h2>
+          <p class="text-gray-700 mt-3 text-sm md:text-lg">
             House is commited to helping its clients to reach their goals.
           </p>
         </div>
-        <div class="mt-20 grid grid-flow-row grid-cols-4 place-content-evenly">
-          <div>
-            <img src="assets/icons/taxes.png" alt="Taxes House Icon" />
-            <h4 class="font-bold text-blue-600 mt-6 mb-1">Tax Advantage</h4>
-            <p class="text-gray-600">
+        <div
+          class="
+            mt-10
+            md:mt-20
+            grid grid-flow-row
+            md:grid-cols-4
+            grid-cols-1
+            space-y-10
+            md:space-y-0
+            text-center
+            md:text-left
+          "
+        >
+          <div class="md:px-4">
+            <img
+              src="assets/icons/taxes.png"
+              alt="Taxes House Icon"
+              class="inline"
+            />
+            <h4 class="font-bold text-blue-600 mt-6 mb-1 text-sm md:text-lg">
+              Tax Advantage
+            </h4>
+            <p class="text-gray-600 text-xs md:text-sm">
               Tax advantage which applies to certain accounts or investments.
             </p>
           </div>
-          <div>
-            <img src="assets/icons/user.png" alt="Taxes House Icon" />
-            <h4 class="font-bold text-blue-600 mt-6 mb-1">
+          <div class="md:px-4">
+            <img
+              src="assets/icons/user.png"
+              alt="Taxes House Icon"
+              class="inline"
+            />
+            <h4 class="font-bold text-blue-600 mt-6 mb-1 text-sm md:text-lg">
               Property Insurance
             </h4>
-            <p class="text-gray-600">
+            <p class="text-gray-600 text-xs md:text-sm">
               A series of policies that offer either property protection of
               liability coverage.
             </p>
           </div>
-          <div>
-            <img src="assets/icons/discount.png" alt="Taxes House Icon" />
-            <h4 class="font-bold text-blue-600 mt-6 mb-1">Lowest Commision</h4>
-            <p class="text-gray-600">
+          <div class="md:px-4">
+            <img
+              src="assets/icons/discount.png"
+              alt="Taxes House Icon"
+              class="inline"
+            />
+            <h4 class="font-bold text-blue-600 mt-6 mb-1 text-sm md:text-lg">
+              Lowest Commision
+            </h4>
+            <p class="text-gray-600 text-xs md:text-sm">
               No longer have to negatiate commissions and haggle with other
               agents.
             </p>
           </div>
-          <div>
-            <img src="assets/icons/speed.png" alt="Taxes House Icon" />
-            <h4 class="font-bold text-blue-600 mt-6 mb-1">House Now</h4>
-            <p class="text-gray-600">
+          <div class="md:px-4">
+            <img
+              src="assets/icons/speed.png"
+              alt="Taxes House Icon"
+              class="inline"
+            />
+            <h4 class="font-bold text-blue-600 mt-6 mb-1 text-sm md:text-lg">
+              House Now
+            </h4>
+            <p class="text-gray-600 text-xs md:text-sm">
               Easy booking system for a host. <br />Try our innovative model.
             </p>
           </div>
@@ -212,33 +280,43 @@
         class="
           max-w-6xl
           mx-auto
-          mt-20
-          flex
-          items-center
-          justify-between
-          align-middle
+          mt-10
+          md:mt-20 md:flex md:items-center md:justify-between md:align-middle
         "
       >
-        <div class="w-7/12">
-          <h2 class="text-5xl font-bold text-gray-900 mb-16 leading-normal">
+        <div class="w-full px-8 md:w-7/12 text-center md:text-left">
+          <h2
+            class="
+              text-2xl
+              md:text-5xl
+              font-bold
+              text-gray-900
+              mb-4
+              leading-relaxed
+            "
+          >
             Here is what our clients are saying about us
           </h2>
-          <img src="/assets/icons/stars.png" alt="Testimonial Stars" />
-          <p class="text-gray-500 mt-5">
+          <img
+            src="/assets/icons/stars.png"
+            alt="Testimonial Stars"
+            class="w-3/12 inline md:inline-block"
+          />
+          <p class="text-gray-500 mt-5 text-sm text-left md:text-base">
             “Great way to make the first market value estmate and then to select
             an experienced active broker in the local area for a more in-depth
             study. Professional and personalised advice, while avoiding going
             through the big brokers who charge fees that are too much.”
           </p>
-          <div class="mt-14 space-x-5 flex items-center">
+          <div class="mt-8 md:mt-14 space-x-5 flex items-center">
             <img
               src="/assets/img/usertestimonials.png"
               alt="Laurent Dominic"
-              class="w-20"
+              class="md:w-18 w-14"
             />
             <div>
-              <h4 class="font-semibold text-2xl">Laurent Dominic</h4>
-              <p class="text-sm text-gray-500">Founder of Blank Company</p>
+              <h4 class="font-semibold text-xl">Laurent Dominic</h4>
+              <p class="text-gray-500 text-xs">Founder of Blank Company</p>
             </div>
           </div>
         </div>
@@ -246,42 +324,50 @@
           <img
             src="/assets/img/testimonial1.png"
             alt="Testimonial Pertama House"
-            class="rounded-3xl"
+            class="rounded-3xl w-10/12 ml-10 hidden md:block"
           />
         </div>
       </div>
     </section>
     <!-- Testimonial Section END -->
 
-    <footer class="mt-24 bg-gray-950">
+    <footer class="mt-14 md:mt-24 bg-gray-950 px-8 md:px-0">
       <div
         class="
           max-w-6xl
           mx-auto
-          flex
+          md:flex
           justify-between
           py-12
           text-gray-400 text-sm
         "
       >
-        <div class="space-y-2">
-          <h4 class="font-bold text-white text-2xl mb-4">House</h4>
+        <div class="space-y-1">
+          <h4 class="font-bold text-white text-xl mb-2 md:text-2xl md:mb-4">
+            House
+          </h4>
           <p>Dago Bandung</p>
           <p>+62 822 0932 3824</p>
         </div>
-        <div class="flex space-x-32">
-          <div class="space-y-2">
-            <h4 class="font-bold text-white text-xl mb-4">Partners</h4>
+        <div class="flex flex-col md:flex-row md:space-x-32">
+          <div class="space-y-1 md:space-y-2 mt-6 md:mt-0">
+            <h4 class="font-bold text-white text-xl mb-2 md:text-2xl md:mb-4">
+              Partners
+            </h4>
             <p>Goverment Agency</p>
             <p>Private company</p>
           </div>
-          <div class="space-y-2">
-            <h4 class="font-bold text-white text-xl mb-4">Recommendation</h4>
+          <div class="space-y-1 md:space-y-2 mt-6 md:mt-0">
+            <h4 class="font-bold text-white text-xl mb-2 md:text-2xl md:mb-4">
+              Recommendation
+            </h4>
             <p>Homestays</p>
             <p>Villas</p>
           </div>
-          <div class="space-y-2">
-            <h4 class="font-bold text-white text-xl mb-4">About Us</h4>
+          <div class="space-y-1 md:space-y-2 mt-6 md:mt-0">
+            <h4 class="font-bold text-white text-xl mb-2 md:text-2xl md:mb-4">
+              About Us
+            </h4>
             <p>Blog</p>
             <p>Career</p>
             <p>Our Values</p>
@@ -289,5 +375,11 @@
         </div>
       </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="/js/main.js"></script>
   </body>
 </html>
