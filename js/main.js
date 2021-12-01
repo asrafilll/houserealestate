@@ -1,3 +1,11 @@
+const button = document.getElementById("mobile-menu-button");
+const menu = document.getElementById("mobile-menu");
+
+button.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});
+
+// Swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: "3",
   spaceBetween: 60,
